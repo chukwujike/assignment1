@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  align-content: center;
+}
+
+header {
+  background-color: cyan;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 5px;
+  height: 30px;
+  align-items: left;
+  justify-content: left;
+  box-shadow: 0 0 25px 0 black;
+  float: left;
+}
+
+a:hover {
+  color: lemonchiffon;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "a a a b b"
+    "a a a b b"
+    "c c d d d"
+    "c c e e e";
+  gap: 10px;
+  width: 700px;
+  height: 500px;
+  margin: 150px 100px 50px 200px;
+}
+
+.item-a {
+  background-color: blue;
+  grid-area: a;
+  color: transparent;
+}
+
+.item-b {
+  background-color: mediumslateblue;
+  grid-area: b;
+  color: transparent;
+}
+
+.item-c {
+  background-color: darkorchid;
+  grid-area: c;
+  color: transparent;
+}
+
+.item-d {
+  background-color: indigo;
+  grid-area: d;
+  color: transparent;
+}
+
+.item-e {
+  background-color: deeppink;
+  grid-area: e;
+  color: transparent;
+}
